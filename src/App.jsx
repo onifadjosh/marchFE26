@@ -78,9 +78,10 @@ import FetchProd from "./pages/FetchProd";
 import Formikk from "./pages/Formikk";
 import AddStudent from "./pages/AddStudent";
 import Login from "./pages/Login";
-import Register from "./pages/register";
+
 import AuthGuard from "./auth/AuthGuard";
 import Cookies from "universal-cookie";
+import SignUp from "./pages/SignUp";
 
 const App = () => {
   const cookies = new Cookies()
@@ -90,7 +91,7 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
+        <Route path="/register" element={<SignUp />} />
         <Route element={<AuthGuard isAuth={isAuth}/>}>
           <Route index element={<Home />} />
           <Route path="/sp-contact" element={<Contact />} />

@@ -3,7 +3,7 @@ import { useFormik } from "formik";
 import React, { useState } from "react";
 import * as yup from "yup";
 
-const Register = () => {
+const SignUp = () => {
   const [image, setimage] = useState(null);
 
   //base 64
@@ -135,4 +135,4 @@ reader.readAsDataURL(file)
   );
 };
 
-export default Register;
+export default SignUp;
