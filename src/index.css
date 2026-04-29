@@ -1,0 +1,13 @@
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+.greet{
+  background-color: black;
+  color: red;
+  font-size: 30px;
+  padding: 10px;
+  
+}
